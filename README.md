@@ -4,16 +4,16 @@
 
 Each well should have its own folder, with the imagelog CSVs and annotation placed inside following this folder structure:
 
-|(Well_Name)/
-|---|IMLOG.csv
-|---|ESTATICO.csv
-|---|ACUSTICO.csv
-|---|class_data.json
-|---|labels/
-|---|---|000000.txt
-|---|---|000001.txt
-|---|---|000002.txt
-|---|---|...
+|(Well_Name)/  
+|---|IMLOG.csv  
+|---|ESTATICO.csv  
+|---|ACUSTICO.csv  
+|---|class_data.json  
+|---|labels/  
+|---|---|000000.txt  
+|---|---|000001.txt  
+|---|---|000002.txt  
+|---|---|...  
 
 IMLOG.csv is the main log which will be processed with the custom windowing and run through the classification and segmentation models.
 ESTATICO.csv is optional, an estatic version of the ´IMGLOG.csv´ and expected to have the same dimensions as the main file.
