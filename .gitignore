@@ -1,6 +1,6 @@
 .vscode/
 cache/
-data/
+data/*
 
 *.pyc
 *.csv
@@ -8,5 +8,8 @@ data/
 *.pt
 
 models/segmentation/SAM_DBSCAN/
+
+!data/test_data
+!data/test_data/IMLOG.csv
 
 .env
