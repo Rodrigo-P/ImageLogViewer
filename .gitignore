@@ -1,0 +1,12 @@
+.vscode/
+cache/
+data/
+
+*.pyc
+*.csv
+*.ipynb
+*.pt
+
+models/segmentation/SAM_DBSCAN/
+
+.env

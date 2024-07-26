@@ -1,0 +1,7 @@
+customtkinter
+numpy
+radiomics
+torch
+torchvision
+matplotlib
+pandas
