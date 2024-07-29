@@ -1,6 +1,10 @@
 customtkinter
+python-dotenv
 numpy
+opencv-contrib-python
 radiomics
+scikit-learn
+SimpleITK
 torch
 torchvision
 matplotlib
