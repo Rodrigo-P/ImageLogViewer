@@ -62,15 +62,35 @@ The interface will have access to local files, but putting the imagelogs in the 
 
 ### Create environment
 
+Due to the requirements of the `pyradiomics` and `SimpleITK`package, ensure that you have `python` installed on your machine, version 3.9 (64-bits).
+
 ```bash
-python3.10 -m venv env
+python3.9 -m venv env
 source env/bin/activate
+```
+
+### Install pyradiomics
+
+Install [pyradiomics from source](https://pyradiomics.readthedocs.io/en/latest/installation.html#install-from-source), as the package is not available on PyPi for Python 3.9.
+
+```bash
+git clone https://github.com/AIM-Harvard/pyradiomics.git
+cd pyradiomics
+pip install -r requirements.txt
+python setup.py install
+python setup.py build_ext --inplace
+```
+
+Return to ImageLogViewer's root folder.
+
+```bash
+cd ..
 ```
 
 ### Install necessary packages
 
 ```bash
-pip install -r "requirements.txt"
+pip install -r requirements.txt
 ```
 
 ### Configure .env
