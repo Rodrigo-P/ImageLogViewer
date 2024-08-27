@@ -1,11 +1,11 @@
 customtkinter
-python-dotenv
+matplotlib
 numpy
 opencv-contrib-python
-radiomics
+pandas
+python-dotenv
+scikit-image
 scikit-learn
 SimpleITK
 torch
 torchvision
-matplotlib
-pandas
