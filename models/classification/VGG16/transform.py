@@ -150,6 +150,6 @@ def build_classifier(package_path, *args):
         classes_number=3,
         trainable_stages=0,
     )
-    model.load_state_dict(torch.load(weights_path))
+    model.load_state_dict(torch.load(weights_path, weights_only=False))
 
     return model
