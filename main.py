@@ -952,9 +952,6 @@ class ImageViewer:
 
             return {int(key): value for key, value in json_data["prediction"].items()}
 
-    def __del__(self):
-        if self.segmentation_process != None:
-            self.segmentation_process.terminate()
 
 
 viewer_app = ImageViewer()
