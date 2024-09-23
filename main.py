@@ -761,6 +761,7 @@ class ImageViewer:
 
         self.max_position = self.resistive_data["signal"].shape[0] // self.tale_size
         self.max_position -= self.number_of_rows
+        self.max_position -= 1
 
         self._update_display_state()
         self.ruler_canvas.update_values(
@@ -850,6 +851,7 @@ class ImageViewer:
 
         self.max_position = self.resistive_data["signal"].shape[0] // self.tale_size
         self.max_position -= self.number_of_rows
+        self.max_position -= 1
 
         self.resistive_data["bbox_data"] = [
             self._read_bbox_data(pos)
