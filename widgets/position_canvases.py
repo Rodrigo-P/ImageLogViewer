@@ -100,9 +100,10 @@ class MiniatureLogCanvas(CTkCanvas):
         self.bind("<Button-1>", self._click)
 
     def _click(self, event):
-        previous_button: CTkButton = self.root_class.previous_button
+        previous_button: CTkButton = self.root_class.position_zoom_menu.previous_button
+        next_button: CTkButton = self.root_class.position_zoom_menu.next_button
+
         ruler_canvas: RulerCanvas = self.root_class.ruler_canvas
-        next_button: CTkButton = self.root_class.next_button
 
         current_position: int = self.root_class.current_position
         resistive_data: dict = self.root_class.resistive_data
