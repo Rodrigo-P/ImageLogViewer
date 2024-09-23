@@ -805,7 +805,7 @@ class ImageViewer:
         return imlog_data, output_text
 
     def _load_data_folder(self):
-        path_input = filedialog.askdirectory(initialdir=f"{PACKAGEPATH}/data/Test")
+        path_input = filedialog.askdirectory(initialdir=f"{PACKAGEPATH}/data")
 
         # Invalid path
         if path_input == () or path_input == None or path_input == "":
