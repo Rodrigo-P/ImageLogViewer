@@ -390,11 +390,11 @@ class MachineLearningMenuFrame(CTkFrame):
 
         self.classification_functions = ["VGG16", "Annotated"]
         self.classification_process = None
-        self.active_classification_jobs = []
+        self.classification_active = False
 
         self.segmentation_functions = ["OTSU", "SAM", "SLIC"]
         self.segmentation_process: AsyncSegmentation = None
-        self.active_segmentation_jobs = []
+        self.segmentation_active = True
 
         self._build_menu_classification()
         self._build_menu_segmentation()

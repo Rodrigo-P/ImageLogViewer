@@ -955,5 +955,4 @@ class ImageViewer:
             return {int(key): value for key, value in json_data["prediction"].items()}
 
 
-
 viewer_app = ImageViewer()
